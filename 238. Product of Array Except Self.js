@@ -5,16 +5,18 @@
  */
 var productExceptSelf = function(nums) {
     var size = nums.length;
-    var before = [],
-        after = [];
-    before[0] = 1;
-    after[size - 1] = 1;
+    var product = Array(size).fill(1);;
 
-    for (var i = 1; i < size; ++i) {
-        before[i] = before[i - 1] * nums[i - 1];
-        after[size - 1 - i] = after[size - i] * nums[size - i];
+    for (var i = 1; i < size; ++i)
+        product[i] = nums[i - 1] * product[i - 1];
+
+    var temp = 1;
+    for (var i = size - 1; i >= 0; --i) {
+        product[i] *= temp;
+        temp *= nums[i];
     }
-    return nums.map((x, i) => { return before[i] * after[i] });
+    
+    return product;
 };
 
 
@@ -30,7 +32,7 @@ var testcaseAnswers = [
 
 testcases.map((testcase, index) => {
     var op = productExceptSelf(testcase);
-    status = "Success";
+    status = true;
     switch (typeof(testcaseAnswers[index])) {
         case "object":
             {
@@ -45,10 +47,10 @@ testcases.map((testcase, index) => {
             }
         default:
             if (op != testcaseAnswers[index])
-                status = "Error";
+                status = false;
     }
-
-    console.log(status + ": " + testcase + " Output: " + op + " Expected: " + testcaseAnswers[index]);
-
+    console.log("------------");
+    console.log((status ? "Success" : "Error") + ": " + testcase + " Output: " + op + " Expected: " + testcaseAnswers[index]);
+    console.log("------------");
 })
 /*__________________________________________________________________________________________________________________*/
