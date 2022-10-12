@@ -3,16 +3,16 @@ Following [New Year Gift - Curated List of Top 75 LeetCode Questions to Save You
 
 ## Array
 
-- [x] [Two Sum](https://leetcode.com/problems/two-sum/)
-- [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-- [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
-- [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-- [x] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
-- [x] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-- [x] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-- [x] [3Sum](https://leetcode.com/problems/3sum/)
-- [x] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- [x] [Two Sum](https://leetcode.com/problems/two-sum/) ![Easy](https://img.shields.io/badge/EASY-yellow)
+- [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) ![Easy](https://img.shields.io/badge/EASY-yellow)
+- [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) ![Easy](https://img.shields.io/badge/EASY-yellow)
+- [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
+- [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
+- [x] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
+- [x] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
+- [x] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
+- [x] [3Sum](https://leetcode.com/problems/3sum/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
+- [x] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
 
 ## Binary
 
@@ -24,8 +24,8 @@ Following [New Year Gift - Curated List of Top 75 LeetCode Questions to Save You
 
 ## Dynamic Programming
 
-- [x] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
-- [x] [Coin Change](https://leetcode.com/problems/coin-change/)
+- [x] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) ![Easy](https://img.shields.io/badge/EASY-yellow)
+- [x] [Coin Change](https://leetcode.com/problems/coin-change/) ![Medium](https://img.shields.io/badge/MEDIUM-orange)
 - [ ] [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [ ] [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 - [ ] [Word Break Problem](https://leetcode.com/problems/word-break/)
