@@ -106,3 +106,8 @@ Following [New Year Gift - Curated List of Top 75 LeetCode Questions to Save You
 - [ ] [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) ![Hard](https://img.shields.io/badge/HARD-red)
 - [x] [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) ![Medium](https://img.shields.io/badge/MEDIUM-yellow)
 - [ ] [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) ![Hard](https://img.shields.io/badge/HARD-red)
+
+
+## Other
+
+- [x] [2432. The Employee That Worked on the Longest Task](https://leetcode.com/contest/weekly-contest-314/problems/the-employee-that-worked-on-the-longest-task/)  ![Easy](https://img.shields.io/badge/EASY-green)
