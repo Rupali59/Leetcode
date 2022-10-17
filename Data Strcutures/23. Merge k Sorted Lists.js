@@ -1,8 +1,3 @@
-function ListNode(val, next) {
-     this.val = (val===undefined ? 0 : val)
-     this.next = (next===undefined ? null : next)
- }
-
 class MyMinHeap {
     heap = [];
 
@@ -89,8 +84,61 @@ var mergeKLists = function(lists) {
     lists = lists.filter(x => x.length);
     if (lists.length == 0)
         return [];
-    return mergeKListsByHeap(lists);
+    // return mergeKListsByHeap(lists);
+    return mergeKListHeapDS(lists);
+    // return mergeKListsMerge(lists);
 };
+
+
+var mergeKListHeapDS = function(lists) {
+    var minPriorityQueue = new MinPriorityQueue({ priority: x => x.val });
+    for (var i = 0; i < lists.length; ++i) {
+        var list = lists[i];
+        while (list) {
+            minPriorityQueue.enqueue(list);
+            list = list.next;
+        }
+    }
+
+    var result = new ListNode();
+    var head = result;
+    while (!minPriorityQueue.isEmpty()) {
+        const { val, next } = minPriorityQueue.dequeue().element;
+        head.next = new ListNode(val);
+        head = head.next;
+    }
+    return result.next;
+}
+
+var mergeKListsMerge = function(lists) {
+    if (!lists.length)
+        return null;
+    for (let i = 1; i < lists.length; i++) {
+        // Merge each ListNode with the first
+        lists[0] = merge(lists[0], lists[i]);
+    }
+
+    // Return the merged ListNode
+    return lists[0];
+}
+
+var merge = function(l1, l2) {
+    // If either list is empty, return the other list's node
+    if (l1 == null) return l2;
+    if (l2 == null) return l1;
+
+    // If l1 is lower
+    if (l1.val < l2.val) {
+        l1.next = merge(l1.next, l2);
+        return l1;
+    }
+    // If l2 is lower
+    else {
+        l2.next = merge(l1, l2.next);
+        return l2;
+    }
+};
+
 
 var mergeKListsByHeap = function(lists) {
     var minHeap = new MyMinHeap();
@@ -104,13 +152,25 @@ var mergeKListsByHeap = function(lists) {
 
 
 var convertToLL = function(array) {
-    var node = new Node();
-    if (array.length < 1)
-        return node;
-    for (var i = array.length - 1; i >= 0; --i) {
-        var temp = new Node(array[i]);
-        temp.next = node;
-        node = temp;
+    var size = array.length - 1;
+    var n = size;
+
+    if (n < 1)
+        return null;
+
+    var node = new ListNode();
+    var current;
+
+    while (n >= 0) {
+        var temp = new ListNode(array[size - n]);
+        if (!current) {
+            current = temp;
+            node = current;
+        } else {
+            current.next = temp;
+            current = current.next;
+        }
+        n--;
     }
     return node;
 }
