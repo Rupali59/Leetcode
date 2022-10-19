@@ -111,4 +111,4 @@ Following [New Year Gift - Curated List of Top 75 LeetCode Questions to Save You
 ## Other
 
 - [x] [2432. The Employee That Worked on the Longest Task](https://leetcode.com/contest/weekly-contest-314/problems/the-employee-that-worked-on-the-longest-task/)  ![Easy](https://img.shields.io/badge/EASY-green)
-- [x] [202. Happy Number](https://leetcode.com/problems/happy-number/)
+- [x] [202. Happy Number](https://leetcode.com/problems/happy-number/) ![Easy](https://img.shields.io/badge/EASY-green)
