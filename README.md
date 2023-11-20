@@ -1,6 +1,6 @@
 # Leetcode repo
 Following [New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU/)
-
+Other Links [Other Leetcode Links](https://leetcode.com/discuss/general-discussion/665604/Important-and-Useful-links-from-all-over-the-LeetCode)
 ## Array
 
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/) ![Easy](https://img.shields.io/badge/EASY-green)
