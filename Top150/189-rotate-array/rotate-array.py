@@ -8,10 +8,6 @@ class Solution:
             gcd = math.gcd(i, num_elements)
             start=i
             next_el = (start + k) % num_elements
-            # print(i, gcd, start, next_el, nums)
             while next_el != start:
                 nums[start], nums[next_el] = nums[next_el], nums[start]
                 next_el = (next_el + k) % num_elements
-            #     print(i, gcd, start, next_el, nums)
-            # print(i, start, next_el, nums)
-            # print("---")
