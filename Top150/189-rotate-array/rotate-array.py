@@ -2,11 +2,10 @@ class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         num_elements = len(nums)
         k %= num_elements
-        if(k==0):
+        if(k==0 or num_elements<2):
             return
+
         cycles = math.gcd(num_elements, k)
-        
-        
         for i in range(cycles):
             gcd = math.gcd(i, num_elements)
             start=i
